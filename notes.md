@@ -155,3 +155,92 @@ function calculateTip(price, kindness) {
     },
   [
 }
+```
+
+## Q17: What is the DOM used for?
+DOM stands for Document Object Model and is used to represent the structure of HTML documents as tree-like structures, where each node corresponds to an element, attribute, or pieces of text in the document. Allows for dynamic manipulation of web pages.
+
+## Q18: how to get the DOM refernce of a given single HTML tag?
+document.getElementById(id) or document.querySelector(element/id)
+
+## Q19: how to get the DOM refernce of a given Multiple HTML tag?
+document.querySelectorAll(element)
+
+## Q20: How would you change the text of a specific H1 tag in your page with JavaScript/DOM
+```JavaScript
+let text = document.getElementById('h1tag');
+text.textContent = "new text here"
+```
+
+## Q21: How would you change the color of a given H1 tag when clicking a button on the webpage? Explain the whole process of getting the reference, adding an event listener and creating the function that will change the background color
+```JavaScript
+let text = document.getElementById('h1tag');
+let b = document.getElementById('bmyButton');
+
+b.addEventListener('click', changeColor);
+
+function changeColor() {
+  text.style.color = 'red';
+}
+```
+
+## Q22: What are the three types of web storage discussed in class? Give examples of how to use each one and also describe the differences among them
+1. Local Storage
+  * If you close the browser or get another TAB (session) the stored data will still be available
+2. Session Storage
+  * Storage that is only available during the session in which the webpage is open. If the page is closed, then the data will be lost  
+3. Cookies
+  * Data stored on a user's device by a web browser that is used to remember information about session state across multiple requests to a website. Only used when we need to send some info to the web server
+
+## Q23: What is the purpose of having/using web storage?
+To allow web applications to store data locally within a user's browser.
+
+## Q24: What is the difference between client and host?
+Client: Any device which requests something on a server
+Host: Any device which sends or recieves traffic
+
+# Q25: What is the genreal structure of the OSI model?
+1. Physical - Transporting bits
+2. Data Link - Interaction with the wire
+3. Network - Addressing scheme (IP address)
+4. Transport - Service to service / addressing scheme (ports)
+5. Session 
+6. Presentation
+7. Application
+
+# Q26: What does HTTP stand for?
+Hypertext Transfer Protocol
+
+# Q27: Given 5 types of HTTP requests that we have learned in class, what they are used for, and which ones require us to send data to the server.
+1. GET - Retrieves data from the server
+2. POST - submit data to the server
+3. PUT - Update data already on the server (whole dataset must be provided)
+4. PATCH - Update data already on the server (partial dataset may be provided)
+5. DELETE - Deletes data from the server
+
+# Q28: What is fetch command used for? Why do we say that fetch and “then” are promises?
+The fetch command is used in JavaScript to make network requests (HTTP requests) to servers and fetch resources such as JSON data, HTML, images, etc. Fetch and Then are promises. Fetch will return a promise representing the completion or faailure of a newtork request. we then use then() when we have a success
+
+# Q29: What can the postman app be used for?
+Postman can be used to test and use HTTP request to either send or retrieve data
+
+# Q30: What is Flask used for?
+Flask is a python web framework that makes it easy to create a fully-featured web application. It is essentially our backend and provides tools, libraries, and patterns to simplify the creation of web application by handling tasks such as routing, HTTP request handing, and template rendering
+
+# Q31: How to create a route, such as /about in a Flask program, that makes your web browser to display “Hello Banana” in H1 format?
+
+```python
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/about")
+def about():
+    return '<h1>Hello Banana</h1>'
+
+if __name__ == "__main__":
+    app.run()
+```
+
+# Q32: How would you reroute a customer from one page to another?
+
