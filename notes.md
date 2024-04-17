@@ -243,4 +243,22 @@ if __name__ == "__main__":
 ```
 
 # Q32: How would you reroute a customer from one page to another?
+return redirect(url_for("def_name))
+
+# Q33: How to render a full page from an html file in a Flask program?
+return render_template("page.html")
+
+# Q34: How to pass information to a html file, such as a link to a lougout page, via render_template method?
+return render_template("page.html, logout_link=logout_link")
+
+# Q35 What is a virtual environment used for
+Virtual environments allow you to have all your project configurations part of your project, not the VS code environment
+
+# Q37 What is AJAX used for?
+AJAX stands for Asynchronous JavaScript and XML. It is used to send and retrieve data from a web server asynchronously without interfering with the display and behavior of the existing page
+
+# Q38 How to save information that the user has previously been logged to avoid the need to redirect the user to the login page again?
+
+# Q39 How to create a model in Flask? How to access it when needed?
+
 
