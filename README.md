@@ -219,7 +219,7 @@ Hypertext Transfer Protocol
 4. PATCH - Update data already on the server (partial dataset may be provided)
 5. DELETE - Deletes data from the server
 
-Put Patch and Delete require us to send data to the server
+Post Put Patch require us to send data to the server
 
 ## Q28: What is fetch command used for? Why do we say that fetch and “then” are promises?
 The fetch command is used in JavaScript to make network requests (HTTP requests) to servers and fetch resources such as JSON data, HTML, images, etc. Fetch and Then are promises. Fetch will return a promise representing the completion or faailure of a newtork request. we then use then() when we have a success
