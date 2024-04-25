@@ -43,6 +43,7 @@ Block: Always starts on a new line, and the browser automatically adds some spac
 ```
 
 ## Q5: How to have a set of radio buttons grouped, so that if you click in one all the other ones are deselected automatically?
+Make sure they all have the same name value
 ```HTML
 <form action="/action_page.php">
   <p>Please select your favorite Web language:</p>
