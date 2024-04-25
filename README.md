@@ -159,7 +159,7 @@ function calculateTip(price, kindness) {
 ```
 
 ## Q17: What is the DOM used for?
-DOM stands for Document Object Model and is used to represent the structure of HTML documents as tree-like structures, where each node corresponds to an element, attribute, or pieces of text in the document. Allows for dynamic manipulation of web pages.
+DOM is a programming interface for web documents that represents the page so that programs can change the document structure, style, and content; represents the document as nodes & objects
 
 ## Q18: how to get the DOM refernce of a given single HTML tag?
 document.getElementById(id) or document.querySelector(element/id)
