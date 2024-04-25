@@ -95,7 +95,7 @@ h1 {
 }
 ```
 
-## Q11: How to select an HTML tag using its ID
+## Q11: How to select an HTML tag using its Class
 ```CSS
 .class {
   property: value;
