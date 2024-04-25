@@ -13,10 +13,10 @@ HTML is used to present the structure of a document, such as what/where text sho
 ## Q2: Explain in words how we can use Unordered lists to create navigation bars. Include the command to have 3 list items per row.
 Unordered lists allow us to group links within a single element that we can style to achieve our desired layout
 ```HTML
-<ul>
-  <li style=”float: left width: 30%”><a href="/home">Home</a></li>
-  <li style=”float: left width: 30%”><a href="/about">About</a></li>
-  <li style=”float: left width: 30%”><a href="/contact">Contact</a></li>
+<ul style=”float: left width: 30%”>
+  <li><a href="/home">Home</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
 </ul>
 ```
 
