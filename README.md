@@ -200,7 +200,7 @@ To allow web applications to store data locally within a user's browser.
 Client: Any device which requests something on a server
 Host: Any device which sends or recieves traffic
 
-# Q25: What is the genreal structure of the OSI model?
+## Q25: What is the genreal structure of the OSI model?
 1. Physical - Transporting bits
 2. Data Link - Interaction with the wire
 3. Network - Addressing scheme (IP address)
@@ -209,26 +209,26 @@ Host: Any device which sends or recieves traffic
 6. Presentation
 7. Application
 
-# Q26: What does HTTP stand for?
+## Q26: What does HTTP stand for?
 Hypertext Transfer Protocol
 
-# Q27: Given 5 types of HTTP requests that we have learned in class, what they are used for, and which ones require us to send data to the server.
+## Q27: Given 5 types of HTTP requests that we have learned in class, what they are used for, and which ones require us to send data to the server.
 1. GET - Retrieves data from the server
 2. POST - submit data to the server
 **3. PUT - Update data already on the server (whole dataset must be provided)**
 **4. PATCH - Update data already on the server (partial dataset may be provided)**
 **5. DELETE - Deletes data from the server**
 
-# Q28: What is fetch command used for? Why do we say that fetch and “then” are promises?
+## Q28: What is fetch command used for? Why do we say that fetch and “then” are promises?
 The fetch command is used in JavaScript to make network requests (HTTP requests) to servers and fetch resources such as JSON data, HTML, images, etc. Fetch and Then are promises. Fetch will return a promise representing the completion or faailure of a newtork request. we then use then() when we have a success
 
-# Q29: What can the postman app be used for?
+## Q29: What can the postman app be used for?
 Postman can be used to test and use HTTP request to either send or retrieve data
 
-# Q30: What is Flask used for?
+## Q30: What is Flask used for?
 Flask is a python web framework that makes it easy to create a fully-featured web application. It is essentially our backend and provides tools, libraries, and patterns to simplify the creation of web application by handling tasks such as routing, HTTP request handing, and template rendering
 
-# Q31: How to create a route, such as /about in a Flask program, that makes your web browser to display “Hello Banana” in H1 format?
+## Q31: How to create a route, such as /about in a Flask program, that makes your web browser to display “Hello Banana” in H1 format?
 
 ```python
 from flask import Flask
@@ -243,28 +243,28 @@ if __name__ == "__main__":
     app.run()
 ```
 
-# Q32: How would you reroute a customer from one page to another?
+## Q32: How would you reroute a customer from one page to another?
 ```python
 return redirect(url_for("def_name))
 ```
 
-# Q33: How to render a full page from an html file in a Flask program?
+## Q33: How to render a full page from an html file in a Flask program?
 ```python
 return render_template("page.html")
 ```
 
-# Q34: How to pass information to a html file, such as a link to a lougout page, via render_template method?
+## Q34: How to pass information to a html file, such as a link to a lougout page, via render_template method?
 ```python
 return render_template("page.html, logout_link=logout_link")
 ```
 
-# Q35 What is a virtual environment used for
+## Q35 What is a virtual environment used for
 Virtual environments allow you to have all your project configurations part of your project, not the VS code environment
 
-# Q37 What is AJAX used for?
+## Q37 What is AJAX used for?
 AJAX stands for Asynchronous JavaScript and XML. It is used to send and retrieve data from a web server asynchronously without interfering with the display and behavior of the existing page
 
-# Q38 How to save information that the user has previously been logged to avoid the need to redirect the user to the login page again?
+## Q38 How to save information that the user has previously been logged to avoid the need to redirect the user to the login page again?
 use local storage
 ```python
 def default():
@@ -276,7 +276,7 @@ def default():
         return redirect(url_for("login_controller"))
 ```
 
-# Q39 How to create a model in Flask? How to access it when needed?
+## Q39 How to create a model in Flask? How to access it when needed?
 ```python
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
