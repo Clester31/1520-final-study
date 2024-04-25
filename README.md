@@ -215,9 +215,9 @@ Hypertext Transfer Protocol
 # Q27: Given 5 types of HTTP requests that we have learned in class, what they are used for, and which ones require us to send data to the server.
 1. GET - Retrieves data from the server
 2. POST - submit data to the server
-3. PUT - Update data already on the server (whole dataset must be provided)
-4. PATCH - Update data already on the server (partial dataset may be provided)
-5. DELETE - Deletes data from the server
+**3. PUT - Update data already on the server (whole dataset must be provided)**
+**4. PATCH - Update data already on the server (partial dataset may be provided)**
+**5. DELETE - Deletes data from the server**
 
 # Q28: What is fetch command used for? Why do we say that fetch and “then” are promises?
 The fetch command is used in JavaScript to make network requests (HTTP requests) to servers and fetch resources such as JSON data, HTML, images, etc. Fetch and Then are promises. Fetch will return a promise representing the completion or faailure of a newtork request. we then use then() when we have a success
