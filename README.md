@@ -24,7 +24,7 @@ Unordered lists allow us to group links within a single element that we can styl
 ```HTML
 <ul>
   <li><img src="image.url"></li>
-  >li>Item Description Here</li>
+  <li>Item Description Here</li>
   <li>Price: $15</li>
 </ul>
 ```
