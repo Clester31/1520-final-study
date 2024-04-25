@@ -244,13 +244,19 @@ if __name__ == "__main__":
 ```
 
 # Q32: How would you reroute a customer from one page to another?
+```python
 return redirect(url_for("def_name))
+```
 
 # Q33: How to render a full page from an html file in a Flask program?
+```python
 return render_template("page.html")
+```
 
 # Q34: How to pass information to a html file, such as a link to a lougout page, via render_template method?
+```python
 return render_template("page.html, logout_link=logout_link")
+```
 
 # Q35 What is a virtual environment used for
 Virtual environments allow you to have all your project configurations part of your project, not the VS code environment
@@ -259,7 +265,25 @@ Virtual environments allow you to have all your project configurations part of y
 AJAX stands for Asynchronous JavaScript and XML. It is used to send and retrieve data from a web server asynchronously without interfering with the display and behavior of the existing page
 
 # Q38 How to save information that the user has previously been logged to avoid the need to redirect the user to the login page again?
+use local storage
+```python
+def default():
+    if session.get('logged_in'):
+        print("User is already logged in. Redirecting to home page...")
+        return redirect(url_for("home"))
+    else:
+        print("Root route: Redirecting request from root page to login page...")
+        return redirect(url_for("login_controller"))
+```
 
 # Q39 How to create a model in Flask? How to access it when needed?
+```python
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    email = db.Column(db.String(120), unique=True, nullable=False)
 
+    def __repr__(self):
+        return '<User %r>' % self.username
+```
 
