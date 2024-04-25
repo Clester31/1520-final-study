@@ -245,7 +245,7 @@ if __name__ == "__main__":
 
 ## Q32: How would you reroute a customer from one page to another?
 ```python
-return redirect(url_for("def_name))
+return redirect(url_for("def_name"))
 ```
 
 ## Q33: How to render a full page from an html file in a Flask program?
